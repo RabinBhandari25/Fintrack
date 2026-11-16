@@ -1,16 +1,57 @@
-#	Page	Role and functionality	Connected pages
-1	Login	Allows existing users to sign in using email and password.	Registration, Forgot Password, Dashboard
-2	Registration	Allows new users to create a FinTrack account by entering their personal details.	Login
-3	Forgot Password	Allows users to request a password-reset link through their email.	Login, Reset Password
-4	Reset Password	Allows users to choose a new password through a valid reset link.	Login
-5	Dashboard	The main financial overview showing total assets, liabilities, net worth, account balances, income, expenses, and investment performance.	Accounts, Transactions, Portfolio, Reports
-6	My Accounts	Displays all financial accounts, including bank accounts, credit cards, and investment accounts. Allows users to add or manage simulated accounts.	Account Details, Transfers
-7	Account Details	Displays information about one selected financial account, including its balance and transaction history.	My Accounts, Transactions, Transfers
-8	Transactions	Displays the user's financial transaction history with filtering, sorting, and searching.	Account Details, Income & Expenses
-9	Transfers	Provides a form for transferring simulated funds between the user's accounts.	My Accounts, Account Details, Transactions
-10	Income & Expenses	Allows users to record and categorize income and expenses, review spending categories, and monitor cash flow.	Transactions, Dashboard, Reports
-11	Investment Portfolio	Displays investment holdings, current values, asset allocation, profit/loss, and portfolio performance.	Trading, Dashboard, Reports
-12	Trading	Provides stock search, price charts, watchlist information, and simulated buy/sell orders.	Investment Portfolio, Transactions
-13	Financial Reports	Displays financial charts, spending trends, income versus expenses, net-worth history, and investment reports.	Dashboard, Transactions, Portfolio
-14	User Profile	Allows users to view and update personal information, account preferences, and password settings.	Dashboard, Login after logout
-15	Admin Dashboard	Provides authorized administrators with user management, system statistics, financial audit-log viewing, and application activity.	User Profile, Dashboard
+1	Login	
+Allows existing users to sign in using email and password.	
+Registration, Forgot Password, Dashboard
+
+2	Registration	
+Allows new users to create a FinTrack account by entering their personal details.	
+Login
+
+3	Forgot Password	
+Allows users to request a password-reset link through their email.	
+Login, Reset Password
+
+4	Reset Password	
+Allows users to choose a new password through a valid reset link.	
+Login
+
+5	Dashboard	
+The main financial overview showing total assets, liabilities, net worth, account balances, income, expenses, and investment performance.	
+Accounts, Transactions, Portfolio, Reports
+
+6  My Accounts	
+Displays all financial accounts, including bank accounts, credit cards, and investment accounts. Allows users to add or manage simulated accounts.	
+Account Details, Transfers
+
+7	Account Details	
+Displays information about one selected financial account, including its balance and transaction history.	
+My Accounts, Transactions, Transfers
+
+8	Transactions	
+Displays the user's financial transaction history with filtering, sorting, and searching.	
+Account Details, Income & Expenses
+
+9	Transfers	
+Provides a form for transferring simulated funds between the user's accounts.	
+My Accounts, Account Details, Transactions
+
+10	Income & Expenses	
+Allows users to record and categorize income and expenses, review spending categories, and monitor cash flow.	Transactions, Dashboard, Reports
+
+11	Investment Portfolio	
+Displays investment holdings, current values, asset allocation, profit/loss, and portfolio performance.	
+Trading, Dashboard, Reports
+
+12	Trading	
+Provides stock search, price charts, watchlist information, and simulated buy/sell orders.	
+Investment Portfolio, Transactions
+
+13	Financial Reports	
+Displays financial charts, spending trends, income versus expenses, net-worth history, and investment reports.	Dashboard, Transactions, Portfolio
+
+14	User Profile	
+Allows users to view and update personal information, account preferences, and password settings.	
+Dashboard, Login after logout
+
+15	Admin Dashboard	
+Provides authorized administrators with user management, system statistics, financial audit-log viewing, and application activity.	
+User Profile, Dashboard
