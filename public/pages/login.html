@@ -1,1 +1,241 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#6858de"><meta name="description" content="FinTrack academic financial management UI prototype - Welcome back"><title>Welcome back | FinTrack</title><link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg"><link rel="stylesheet" href="../assets/css/main.css"><link rel="stylesheet" href="../assets/css/components.css"><link rel="stylesheet" href="../assets/css/auth.css"></head><body data-page="welcome-back"><main class="auth-page"><div class="auth-hero"><div class="auth-brand"><span class="brand-mark"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-trending"></use></svg></span>fintrack.</div><div class="hero-copy"><div class="eyebrow" style="color:#dcd5ff;margin-bottom:12px">YOUR MONEY, MADE SIMPLE</div><h2>A clearer picture of your money, all in one place.</h2><p>Track everyday spending, organize financial accounts, and explore investments in one beautifully simple space.</p><div class="auth-mock"><div class="between"><span class="mini-label">Your net worth</span><span class="pill success">↑ 8.4%</span></div><div class="mini-number">$46,452.15</div><div class="mock-bars"><b style="--h:39%"></b><b style="--h:52%"></b><b style="--h:46%"></b><b style="--h:61%"></b><b style="--h:55%"></b><b style="--h:72%"></b><b style="--h:65%"></b><b style="--h:79%"></b><b style="--h:76%"></b><b style="--h:90%"></b></div><p class="small" style="color:var(--muted);margin-top:10px">Illustrative overview · Not live financial data</p></div></div><div class="hero-foot">Built for financial clarity · COMP 3540 UI prototype</div></div><section class="auth-content"><div class="auth-topnote">Part 2 · Frontend preview</div><div class="auth-content-inner"><h1>Welcome back</h1><p class="intro">Sign in to explore your FinTrack workspace.</p><form class="auth-form" data-demo-form="login"><div class="field"><label for="email">Email address</label><input id="email" class="form-control" name="email" type="email" placeholder="you@example.com" required autocomplete="email" ></div><div class="field"><label for="password">Password</label><div class="input-icon"><span style="position:absolute;left:12px;top:12px;color:#99a1b3"><svg class="icon sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-lock"></use></svg></span><input class="form-control" id="password" type="password" name="password" placeholder="Enter your password" autocomplete="current-password" required minlength="8" style="padding-right:45px"><button type="button" class="icon-button" data-toggle-password="password" aria-label="Show password"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-eye"></use></svg></button></div></div><div class="between"><label class="check-row"><input type="checkbox" name="remember"> Remember me</label><a class="auth-link" href="forgot-password.html">Forgot password?</a></div><button class="btn btn-primary btn-lg btn-full" type="submit"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-lock"></use></svg> Sign in (demo)</button></form><div class="auth-divider">or</div><a href="dashboard.html" class="btn btn-outline btn-lg btn-full"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-grid"></use></svg> Explore demo dashboard</a><p class="auth-below">New to FinTrack? <a class="auth-link" href="register.html">Create an account</a></p><div class="auth-note"><svg class="icon sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-info"></use></svg> This is a static academic demo. No password is sent, stored, or verified.</div></div></section></main><div class="toast hide" id="toast" role="status" aria-live="polite"></div><script src="../assets/js/app.js" defer></script></body></html>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6858de">
+    <meta name="description" content="FinTrack academic financial management UI prototype - Welcome back">
+
+    <title>Welcome back | FinTrack</title>
+
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+</head>
+
+<body data-page="welcome-back">
+
+    <main class="auth-page">
+
+        <!-- Left Side: Hero Section -->
+        <div class="auth-hero">
+
+            <div class="auth-brand">
+                <span class="brand-mark">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-trending"></use>
+                    </svg>
+                </span>
+                fintrack.
+            </div>
+
+            <div class="hero-copy">
+
+                <div class="eyebrow" style="color:#dcd5ff;margin-bottom:12px">
+                    YOUR MONEY, MADE SIMPLE
+                </div>
+
+                <h2>A clearer picture of your money, all in one place.</h2>
+
+                <p>
+                    Track everyday spending, organize financial accounts,
+                    and explore investments in one beautifully simple space.
+                </p>
+
+                <!-- Financial Overview Preview -->
+                <div class="auth-mock">
+
+                    <div class="between">
+                        <span class="mini-label">Your net worth</span>
+                        <span class="pill success">↑ 8.4%</span>
+                    </div>
+
+                    <div class="mini-number">$46,452.15</div>
+
+                    <div class="mock-bars">
+                        <b style="--h:39%"></b>
+                        <b style="--h:52%"></b>
+                        <b style="--h:46%"></b>
+                        <b style="--h:61%"></b>
+                        <b style="--h:55%"></b>
+                        <b style="--h:72%"></b>
+                        <b style="--h:65%"></b>
+                        <b style="--h:79%"></b>
+                        <b style="--h:76%"></b>
+                        <b style="--h:90%"></b>
+                    </div>
+
+                    <p class="small" style="color:var(--muted);margin-top:10px">
+                        Illustrative overview · Not live financial data
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="hero-foot">
+                Built for financial clarity · COMP 3540 UI prototype
+            </div>
+
+        </div>
+
+        <!-- Right Side: Login Section -->
+        <section class="auth-content">
+
+            <div class="auth-topnote">
+                Part 2 · Frontend preview
+            </div>
+
+            <div class="auth-content-inner">
+
+                <h1>Welcome back</h1>
+
+                <p class="intro">
+                    Sign in to explore your FinTrack workspace.
+                </p>
+
+                <!-- Login Form -->
+                <form class="auth-form" data-demo-form="login">
+
+                    <!-- Email Field -->
+                    <div class="field">
+
+                        <label for="email">Email address</label>
+
+                        <input
+                            id="email"
+                            class="form-control"
+                            name="email"
+                            type="email"
+                            placeholder="you@example.com"
+                            required
+                            autocomplete="email"
+                        >
+
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="field">
+
+                        <label for="password">Password</label>
+
+                        <div class="input-icon">
+
+                            <span
+                                style="position:absolute;left:12px;top:12px;color:#99a1b3"
+                            >
+                                <svg class="icon sm" aria-hidden="true">
+                                    <use href="../assets/icons/sprite.svg#i-lock"></use>
+                                </svg>
+                            </span>
+
+                            <input
+                                class="form-control"
+                                id="password"
+                                type="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                                minlength="8"
+                                style="padding-right:45px"
+                            >
+
+                            <button
+                                type="button"
+                                class="icon-button"
+                                data-toggle-password="password"
+                                aria-label="Show password"
+                            >
+                                <svg class="icon " aria-hidden="true">
+                                    <use href="../assets/icons/sprite.svg#i-eye"></use>
+                                </svg>
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <!-- Remember Me and Forgot Password -->
+                    <div class="between">
+
+                        <label class="check-row">
+                            <input type="checkbox" name="remember">
+                            Remember me
+                        </label>
+
+                        <a class="auth-link" href="forgot-password.html">
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+                    <!-- Sign In Button -->
+                    <button
+                        class="btn btn-primary btn-lg btn-full"
+                        type="submit"
+                    >
+                        <svg class="icon " aria-hidden="true">
+                            <use href="../assets/icons/sprite.svg#i-lock"></use>
+                        </svg>
+                        Sign in (demo)
+                    </button>
+
+                </form>
+
+                <!-- Divider -->
+                <div class="auth-divider">
+                    or
+                </div>
+
+                <!-- Demo Dashboard Button -->
+                <a
+                    href="dashboard.html"
+                    class="btn btn-outline btn-lg btn-full"
+                >
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-grid"></use>
+                    </svg>
+                    Explore demo dashboard
+                </a>
+
+                <!-- Registration Link -->
+                <p class="auth-below">
+                    New to FinTrack?
+                    <a class="auth-link" href="register.html">
+                        Create an account
+                    </a>
+                </p>
+
+                <!-- Demo Notice -->
+                <div class="auth-note">
+
+                    <svg class="icon sm" aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-info"></use>
+                    </svg>
+
+                    This is a static academic demo.
+                    No password is sent, stored, or verified.
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Toast Notification -->
+    <div
+        class="toast hide"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/app.js" defer></script>
+
+</body>
+</html>

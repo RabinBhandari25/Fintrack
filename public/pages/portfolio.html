@@ -1,1 +1,563 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#6858de"><meta name="description" content="FinTrack academic financial management UI prototype - Investment Portfolio"><title>Investment Portfolio | FinTrack</title><link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg"><link rel="stylesheet" href="../assets/css/main.css"><link rel="stylesheet" href="../assets/css/components.css"><link rel="stylesheet" href="../assets/css/layout.css"></head><body data-page="portfolio"><div class="app-shell"><div class="sidebar-overlay" id="sidebar-overlay"></div><aside class="sidebar" id="app-sidebar"><a href="dashboard.html" class="brand"><span class="brand-mark"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-trending"></use></svg></span>fintrack<span style="color:var(--primary)">.</span></a><nav class="sidebar-nav" aria-label="Main navigation"><div class="nav-heading">OVERVIEW</div><a class="nav-item " href="dashboard.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-grid"></use></svg><span>Dashboard</span></a><div class="nav-heading">BANKING</div><a class="nav-item " href="accounts.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-wallet"></use></svg><span>My Accounts</span></a><a class="nav-item " href="transactions.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-receipt"></use></svg><span>Transactions</span></a><a class="nav-item " href="transfers.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-transfer"></use></svg><span>Transfers</span></a><a class="nav-item " href="income-expenses.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-pie"></use></svg><span>Income & Expenses</span></a><div class="nav-heading">INVESTMENTS</div><a class="nav-item active" href="portfolio.html" aria-current="page"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-trending"></use></svg><span>Portfolio</span></a><a class="nav-item " href="trading.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-candles"></use></svg><span>Paper Trading</span></a><div class="nav-heading">INSIGHTS</div><a class="nav-item " href="reports.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-chart"></use></svg><span>Reports</span></a><div class="nav-heading">ACCOUNT</div><a class="nav-item " href="profile.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-user"></use></svg><span>Profile</span></a><a class="nav-item " href="admin.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-shield"></use></svg><span>Admin (demo)</span></a></nav><div class="sidebar-footer"><a href="login.html" class="nav-item"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-logout"></use></svg><span>Back to login</span></a><a href="profile.html" class="sidebar-user"><span class="avatar">AM</span><span><span class="username">Alex Morgan</span><br><span class="userrole">Demo account</span></span></a></div></aside><div class="app-main"><header class="topbar"><div class="topbar-left"><button class="icon-button mobile-menu" id="mobile-menu" aria-label="Open navigation" aria-expanded="false"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-menu"></use></svg></button><div class="breadcrumb">Workspace &nbsp;/&nbsp; <b>Investment Portfolio</b></div></div><div class="topbar-right"><label class="top-search"><svg class="icon sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-search"></use></svg><input type="search" placeholder="Search FinTrack..." data-global-search aria-label="Search pages"></label><button class="icon-button" aria-label="Notifications" data-toast="Notifications are a visual demo for Part 2."><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-bell"></use></svg></button><a href="profile.html" aria-label="Open profile" class="avatar top-avatar">AM</a></div></header><main class="content"><div class="demo-banner"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-info"></use></svg> UI prototype · Sample financial data only · No real funds, authentication, or live trades</div><div class="page-head"><div><h1>Investment Portfolio</h1><p>Monitor your simulated holdings and portfolio performance.</p></div><div class="page-actions"><a class="btn btn-primary" href="trading.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-candles"></use></svg>Paper trading</a></div></div><div class="grid four"><div class="card stat-card"><div class="stat-label">Portfolio value <svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-trending"></use></svg></div><div class="stat-value">$22,430.40</div><div class="stat-sub"><span class="delta">↑ 7.8% YTD</span> Including cash balance</div></div><div class="card stat-card"><div class="stat-label">Invested amount <svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-layers"></use></svg></div><div class="stat-value">$21,630.50</div><div class="stat-sub"> 5 holdings</div></div><div class="card stat-card"><div class="stat-label">Cash available <svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-wallet"></use></svg></div><div class="stat-value">$799.90</div><div class="stat-sub"> Paper portfolio</div></div><div class="card stat-card"><div class="stat-label">Day change <svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-arrow-up"></use></svg></div><div class="stat-value">+$139.24</div><div class="stat-sub"><span class="delta">+0.62%</span> Illustrative only</div></div></div><div class="grid asym section-gap"><section class="card pad "><header class="card-head"><div><h2>Portfolio performance</h2><p>Illustrative six-month return</p></div></header><div class="between"><div class="stat-value" style="font-size:29px;margin:2px 0 5px">$22,430.40</div><span class="pill success">+7.8% YTD</span></div><svg role="img" aria-label="Illustrative financial trend from June to November" viewBox="0 0 720 185" class="chart-area" preserveAspectRatio="xMidYMid meet"><defs><linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6858de" stop-opacity=".17"/><stop offset="1" stop-color="#6858de" stop-opacity="0"/></linearGradient></defs><path d="M28 20 H690" stroke="#edf0f6" stroke-width="1" stroke-dasharray="4 6"/><path d="M28 64.33333333333334 H690" stroke="#edf0f6" stroke-width="1" stroke-dasharray="4 6"/><path d="M28 108.66666666666667 H690" stroke="#edf0f6" stroke-width="1" stroke-dasharray="4 6"/><path d="M28 153 H690" stroke="#edf0f6" stroke-width="1" stroke-dasharray="4 6"/><path d="M28.0,114.4 L88.2,106.5 L148.4,109.1 L208.5,98.5 L268.7,102.5 L328.9,81.2 L389.1,85.2 L449.3,67.9 L509.5,74.5 L569.6,57.2 L629.8,59.9 L690.0,43.9 L690,153 L28,153 Z" fill="url(#areaFill)"/><path d="M28.0,114.4 L88.2,106.5 L148.4,109.1 L208.5,98.5 L268.7,102.5 L328.9,81.2 L389.1,85.2 L449.3,67.9 L509.5,74.5 L569.6,57.2 L629.8,59.9 L690.0,43.9" fill="none" stroke="#6858de" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="690.0" cy="43.9" r="5" fill="#6858de" stroke="white" stroke-width="3"/><text x="28.0" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Jun</text><text x="160.4" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Jul</text><text x="292.8" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Aug</text><text x="425.2" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Sep</text><text x="557.6" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Oct</text><text x="690.0" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Nov</text></svg></section><section class="card pad "><header class="card-head"><div><h2>Asset allocation</h2><p>Share of invested value</p></div></header><div class="donut" style="background:conic-gradient(#6858de 0 36%,#4bbdb0 36% 57%,#70baf1 57% 73%,#f2bb71 73% 86%,#e58c93 86% 100%)"><div class="donut-center"><b>5</b><small>Holdings</small></div></div><div style="margin-top:23px"><div class="info-row"><span class="label">VTI · Broad market</span><strong>35.9%</strong></div><div class="info-row"><span class="label">MSFT · Technology</span><strong>21.5%</strong></div><div class="info-row"><span class="label">VXUS · International</span><strong>16.2%</strong></div><div class="info-row"><span class="label">NVDA · Technology</span><strong>13.4%</strong></div><div class="info-row"><span class="label">AAPL · Technology</span><strong>13.1%</strong></div></div></section></div><div class="section-gap"><section class="card pad "><header class="card-head"><div><h2>Current holdings</h2><p>Example stock and ETF prices are not live</p></div><a class="btn btn-secondary" href="trading.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-candles"></use></svg>Explore paper trading</a></header><div class="table-wrap"><table class="table"><thead><tr><th>Asset</th><th>Shares</th><th>Demo price</th><th>Change</th><th>Market value</th></tr></thead><tbody><tr><td><div class="item-title">VTI</div><div class="item-sub">Vanguard Total Stock Market ETF</div></td><td>25</td><td>$310.40</td><td class="nowrap text-positive">+1.2%</td><td class="amount">$7,760.00</td></tr><tr><td><div class="item-title">MSFT</div><div class="item-sub">Microsoft Corp.</div></td><td>10</td><td>$465.00</td><td class="nowrap text-positive">+0.8%</td><td class="amount">$4,650.00</td></tr><tr><td><div class="item-title">VXUS</div><div class="item-sub">Vanguard Total Intl ETF</div></td><td>50</td><td>$69.89</td><td class="nowrap text-positive">+0.3%</td><td class="amount">$3,494.50</td></tr><tr><td><div class="item-title">NVDA</div><div class="item-sub">Nvidia Corp.</div></td><td>20</td><td>$145.00</td><td class="nowrap text-negative">−0.6%</td><td class="amount">$2,900.00</td></tr><tr><td><div class="item-title">AAPL</div><div class="item-sub">Apple Inc.</div></td><td>12</td><td>$235.50</td><td class="nowrap text-positive">+1.6%</td><td class="amount">$2,826.00</td></tr></tbody></table></div><div class="notice section-gap"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-info"></use></svg><span>All prices, gains, and holdings are illustrative. No brokerage connection is configured in this prototype.</span></div></section></div><footer class="mini-footer">© 2026 FinTrack · Academic UI prototype for COMP 3540 · All figures and names are sample data</footer></main></div></div><div class="toast hide" id="toast" role="status" aria-live="polite"></div><script src="../assets/js/app.js" defer></script></body></html>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6858de">
+    <meta name="description" content="FinTrack academic financial management UI prototype - Investment Portfolio">
+
+    <title>Investment Portfolio | FinTrack</title>
+
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+</head>
+
+<body data-page="portfolio">
+
+    <div class="app-shell">
+
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+        <aside class="sidebar" id="app-sidebar">
+
+            <a href="dashboard.html" class="brand">
+                <span class="brand-mark">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-trending"></use>
+                    </svg>
+                </span>
+                fintrack<span style="color:var(--primary)">.</span>
+            </a>
+
+            <nav class="sidebar-nav" aria-label="Main navigation">
+
+                <div class="nav-heading">OVERVIEW</div>
+
+                <a class="nav-item " href="dashboard.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-grid"></use>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+
+                <div class="nav-heading">BANKING</div>
+
+                <a class="nav-item " href="accounts.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-wallet"></use>
+                    </svg>
+                    <span>My Accounts</span>
+                </a>
+
+                <a class="nav-item " href="transactions.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-receipt"></use>
+                    </svg>
+                    <span>Transactions</span>
+                </a>
+
+                <a class="nav-item " href="transfers.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-transfer"></use>
+                    </svg>
+                    <span>Transfers</span>
+                </a>
+
+                <a class="nav-item " href="income-expenses.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-pie"></use>
+                    </svg>
+                    <span>Income & Expenses</span>
+                </a>
+
+                <div class="nav-heading">INVESTMENTS</div>
+
+                <a class="nav-item active" href="portfolio.html" aria-current="page">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-trending"></use>
+                    </svg>
+                    <span>Portfolio</span>
+                </a>
+
+                <a class="nav-item " href="trading.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-candles"></use>
+                    </svg>
+                    <span>Paper Trading</span>
+                </a>
+
+                <div class="nav-heading">INSIGHTS</div>
+
+                <a class="nav-item " href="reports.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-chart"></use>
+                    </svg>
+                    <span>Reports</span>
+                </a>
+
+                <div class="nav-heading">ACCOUNT</div>
+
+                <a class="nav-item " href="profile.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-user"></use>
+                    </svg>
+                    <span>Profile</span>
+                </a>
+
+                <a class="nav-item " href="admin.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-shield"></use>
+                    </svg>
+                    <span>Admin (demo)</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-footer">
+
+                <a href="login.html" class="nav-item">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-logout"></use>
+                    </svg>
+                    <span>Back to login</span>
+                </a>
+
+                <a href="profile.html" class="sidebar-user">
+                    <span class="avatar">AM</span>
+                    <span>
+                        <span class="username">Alex Morgan</span>
+                        <br>
+                        <span class="userrole">Demo account</span>
+                    </span>
+                </a>
+
+            </div>
+
+        </aside>
+
+        <div class="app-main">
+
+            <header class="topbar">
+
+                <div class="topbar-left">
+
+                    <button
+                        class="icon-button mobile-menu"
+                        id="mobile-menu"
+                        aria-label="Open navigation"
+                        aria-expanded="false"
+                    >
+                        <svg class="icon " aria-hidden="true">
+                            <use href="../assets/icons/sprite.svg#i-menu"></use>
+                        </svg>
+                    </button>
+
+                    <div class="breadcrumb">
+                        Workspace &nbsp;/&nbsp; <b>Investment Portfolio</b>
+                    </div>
+
+                </div>
+
+                <div class="topbar-right">
+
+                    <label class="top-search">
+                        <svg class="icon sm" aria-hidden="true">
+                            <use href="../assets/icons/sprite.svg#i-search"></use>
+                        </svg>
+                        <input
+                            type="search"
+                            placeholder="Search FinTrack..."
+                            data-global-search
+                            aria-label="Search pages"
+                        >
+                    </label>
+
+                    <button
+                        class="icon-button"
+                        aria-label="Notifications"
+                        data-toast="Notifications are a visual demo for Part 2."
+                    >
+                        <svg class="icon " aria-hidden="true">
+                            <use href="../assets/icons/sprite.svg#i-bell"></use>
+                        </svg>
+                    </button>
+
+                    <a href="profile.html" aria-label="Open profile" class="avatar top-avatar">AM</a>
+
+                </div>
+
+            </header>
+
+            <main class="content">
+
+                <div class="demo-banner">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-info"></use>
+                    </svg>
+                    UI prototype · Sample financial data only · No real funds, authentication, or live trades
+                </div>
+
+                <div class="page-head">
+
+                    <div>
+                        <h1>Investment Portfolio</h1>
+                        <p>Monitor your simulated holdings and portfolio performance.</p>
+                    </div>
+
+                    <div class="page-actions">
+                        <a class="btn btn-primary" href="trading.html">
+                            <svg class="icon " aria-hidden="true">
+                                <use href="../assets/icons/sprite.svg#i-candles"></use>
+                            </svg>
+                            Paper trading
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="grid four">
+
+                    <div class="card stat-card">
+                        <div class="stat-label">
+                            Portfolio value
+                            <svg class="icon " aria-hidden="true">
+                                <use href="../assets/icons/sprite.svg#i-trending"></use>
+                            </svg>
+                        </div>
+                        <div class="stat-value">$22,430.40</div>
+                        <div class="stat-sub">
+                            <span class="delta">↑ 7.8% YTD</span>
+                            Including cash balance
+                        </div>
+                    </div>
+
+                    <div class="card stat-card">
+                        <div class="stat-label">
+                            Invested amount
+                            <svg class="icon " aria-hidden="true">
+                                <use href="../assets/icons/sprite.svg#i-layers"></use>
+                            </svg>
+                        </div>
+                        <div class="stat-value">$21,630.50</div>
+                        <div class="stat-sub"> 5 holdings</div>
+                    </div>
+
+                    <div class="card stat-card">
+                        <div class="stat-label">
+                            Cash available
+                            <svg class="icon " aria-hidden="true">
+                                <use href="../assets/icons/sprite.svg#i-wallet"></use>
+                            </svg>
+                        </div>
+                        <div class="stat-value">$799.90</div>
+                        <div class="stat-sub"> Paper portfolio</div>
+                    </div>
+
+                    <div class="card stat-card">
+                        <div class="stat-label">
+                            Day change
+                            <svg class="icon " aria-hidden="true">
+                                <use href="../assets/icons/sprite.svg#i-arrow-up"></use>
+                            </svg>
+                        </div>
+                        <div class="stat-value">+$139.24</div>
+                        <div class="stat-sub">
+                            <span class="delta">+0.62%</span>
+                            Illustrative only
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid asym section-gap">
+
+                    <section class="card pad ">
+
+                        <header class="card-head">
+                            <div>
+                                <h2>Portfolio performance</h2>
+                                <p>Illustrative six-month return</p>
+                            </div>
+                        </header>
+
+                        <div class="between">
+                            <div class="stat-value" style="font-size:29px;margin:2px 0 5px">
+                                $22,430.40
+                            </div>
+                            <span class="pill success">+7.8% YTD</span>
+                        </div>
+
+                        <svg
+                            role="img"
+                            aria-label="Illustrative financial trend from June to November"
+                            viewBox="0 0 720 185"
+                            class="chart-area"
+                            preserveAspectRatio="xMidYMid meet"
+                        >
+
+                            <defs>
+                                <linearGradient
+                                    id="areaFill"
+                                    x1="0"
+                                    y1="0"
+                                    x2="0"
+                                    y2="1"
+                                >
+                                    <stop
+                                        offset="0"
+                                        stop-color="#6858de"
+                                        stop-opacity=".17"
+                                    />
+                                    <stop
+                                        offset="1"
+                                        stop-color="#6858de"
+                                        stop-opacity="0"
+                                    />
+                                </linearGradient>
+                            </defs>
+
+                            <path
+                                d="M28 20 H690"
+                                stroke="#edf0f6"
+                                stroke-width="1"
+                                stroke-dasharray="4 6"
+                            />
+
+                            <path
+                                d="M28 64.33333333333334 H690"
+                                stroke="#edf0f6"
+                                stroke-width="1"
+                                stroke-dasharray="4 6"
+                            />
+
+                            <path
+                                d="M28 108.66666666666667 H690"
+                                stroke="#edf0f6"
+                                stroke-width="1"
+                                stroke-dasharray="4 6"
+                            />
+
+                            <path
+                                d="M28 153 H690"
+                                stroke="#edf0f6"
+                                stroke-width="1"
+                                stroke-dasharray="4 6"
+                            />
+
+                            <path
+                                d="M28.0,114.4 L88.2,106.5 L148.4,109.1 L208.5,98.5 L268.7,102.5 L328.9,81.2 L389.1,85.2 L449.3,67.9 L509.5,74.5 L569.6,57.2 L629.8,59.9 L690.0,43.9 L690,153 L28,153 Z"
+                                fill="url(#areaFill)"
+                            />
+
+                            <path
+                                d="M28.0,114.4 L88.2,106.5 L148.4,109.1 L208.5,98.5 L268.7,102.5 L328.9,81.2 L389.1,85.2 L449.3,67.9 L509.5,74.5 L569.6,57.2 L629.8,59.9 L690.0,43.9"
+                                fill="none"
+                                stroke="#6858de"
+                                stroke-width="3.4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+                            <circle
+                                cx="690.0"
+                                cy="43.9"
+                                r="5"
+                                fill="#6858de"
+                                stroke="white"
+                                stroke-width="3"
+                            />
+
+                            <text x="28.0" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Jun</text>
+                            <text x="160.4" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Jul</text>
+                            <text x="292.8" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Aug</text>
+                            <text x="425.2" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Sep</text>
+                            <text x="557.6" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Oct</text>
+                            <text x="690.0" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Nov</text>
+
+                        </svg>
+
+                    </section>
+
+                    <section class="card pad ">
+
+                        <header class="card-head">
+                            <div>
+                                <h2>Asset allocation</h2>
+                                <p>Share of invested value</p>
+                            </div>
+                        </header>
+
+                        <div
+                            class="donut"
+                            style="background:conic-gradient(#6858de 0 36%,#4bbdb0 36% 57%,#70baf1 57% 73%,#f2bb71 73% 86%,#e58c93 86% 100%)"
+                        >
+                            <div class="donut-center">
+                                <b>5</b>
+                                <small>Holdings</small>
+                            </div>
+                        </div>
+
+                        <div style="margin-top:23px">
+
+                            <div class="info-row">
+                                <span class="label">VTI · Broad market</span>
+                                <strong>35.9%</strong>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="label">MSFT · Technology</span>
+                                <strong>21.5%</strong>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="label">VXUS · International</span>
+                                <strong>16.2%</strong>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="label">NVDA · Technology</span>
+                                <strong>13.4%</strong>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="label">AAPL · Technology</span>
+                                <strong>13.1%</strong>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <div class="section-gap">
+
+                    <section class="card pad ">
+
+                        <header class="card-head">
+
+                            <div>
+                                <h2>Current holdings</h2>
+                                <p>Example stock and ETF prices are not live</p>
+                            </div>
+
+                            <a class="btn btn-secondary" href="trading.html">
+                                <svg class="icon " aria-hidden="true">
+                                    <use href="../assets/icons/sprite.svg#i-candles"></use>
+                                </svg>
+                                Explore paper trading
+                            </a>
+
+                        </header>
+
+                        <div class="table-wrap">
+
+                            <table class="table">
+
+                                <thead>
+                                    <tr>
+                                        <th>Asset</th>
+                                        <th>Shares</th>
+                                        <th>Demo price</th>
+                                        <th>Change</th>
+                                        <th>Market value</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <div class="item-title">VTI</div>
+                                            <div class="item-sub">Vanguard Total Stock Market ETF</div>
+                                        </td>
+                                        <td>25</td>
+                                        <td>$310.40</td>
+                                        <td class="nowrap text-positive">+1.2%</td>
+                                        <td class="amount">$7,760.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="item-title">MSFT</div>
+                                            <div class="item-sub">Microsoft Corp.</div>
+                                        </td>
+                                        <td>10</td>
+                                        <td>$465.00</td>
+                                        <td class="nowrap text-positive">+0.8%</td>
+                                        <td class="amount">$4,650.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="item-title">VXUS</div>
+                                            <div class="item-sub">Vanguard Total Intl ETF</div>
+                                        </td>
+                                        <td>50</td>
+                                        <td>$69.89</td>
+                                        <td class="nowrap text-positive">+0.3%</td>
+                                        <td class="amount">$3,494.50</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="item-title">NVDA</div>
+                                            <div class="item-sub">Nvidia Corp.</div>
+                                        </td>
+                                        <td>20</td>
+                                        <td>$145.00</td>
+                                        <td class="nowrap text-negative">−0.6%</td>
+                                        <td class="amount">$2,900.00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="item-title">AAPL</div>
+                                            <div class="item-sub">Apple Inc.</div>
+                                        </td>
+                                        <td>12</td>
+                                        <td>$235.50</td>
+                                        <td class="nowrap text-positive">+1.6%</td>
+                                        <td class="amount">$2,826.00</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                        <div class="notice section-gap">
+                            <svg class="icon " aria-hidden="true">
+                                <use href="../assets/icons/sprite.svg#i-info"></use>
+                            </svg>
+                            <span>
+                                All prices, gains, and holdings are illustrative.
+                                No brokerage connection is configured in this prototype.
+                            </span>
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <footer class="mini-footer">
+                    © 2026 FinTrack · Academic UI prototype for COMP 3540 · All figures and names are sample data
+                </footer>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <div class="toast hide" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="../assets/js/app.js" defer></script>
+
+</body>
+</html>

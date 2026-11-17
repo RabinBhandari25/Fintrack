@@ -1,1 +1,591 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#6858de"><meta name="description" content="FinTrack academic financial management UI prototype - Financial Reports"><title>Financial Reports | FinTrack</title><link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg"><link rel="stylesheet" href="../assets/css/main.css"><link rel="stylesheet" href="../assets/css/components.css"><link rel="stylesheet" href="../assets/css/layout.css"></head><body data-page="reports"><div class="app-shell"><div class="sidebar-overlay" id="sidebar-overlay"></div><aside class="sidebar" id="app-sidebar"><a href="dashboard.html" class="brand"><span class="brand-mark"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-trending"></use></svg></span>fintrack<span style="color:var(--primary)">.</span></a><nav class="sidebar-nav" aria-label="Main navigation"><div class="nav-heading">OVERVIEW</div><a class="nav-item " href="dashboard.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-grid"></use></svg><span>Dashboard</span></a><div class="nav-heading">BANKING</div><a class="nav-item " href="accounts.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-wallet"></use></svg><span>My Accounts</span></a><a class="nav-item " href="transactions.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-receipt"></use></svg><span>Transactions</span></a><a class="nav-item " href="transfers.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-transfer"></use></svg><span>Transfers</span></a><a class="nav-item " href="income-expenses.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-pie"></use></svg><span>Income & Expenses</span></a><div class="nav-heading">INVESTMENTS</div><a class="nav-item " href="portfolio.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-trending"></use></svg><span>Portfolio</span></a><a class="nav-item " href="trading.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-candles"></use></svg><span>Paper Trading</span></a><div class="nav-heading">INSIGHTS</div><a class="nav-item active" href="reports.html" aria-current="page"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-chart"></use></svg><span>Reports</span></a><div class="nav-heading">ACCOUNT</div><a class="nav-item " href="profile.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-user"></use></svg><span>Profile</span></a><a class="nav-item " href="admin.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-shield"></use></svg><span>Admin (demo)</span></a></nav><div class="sidebar-footer"><a href="login.html" class="nav-item"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-logout"></use></svg><span>Back to login</span></a><a href="profile.html" class="sidebar-user"><span class="avatar">AM</span><span><span class="username">Alex Morgan</span><br><span class="userrole">Demo account</span></span></a></div></aside><div class="app-main"><header class="topbar"><div class="topbar-left"><button class="icon-button mobile-menu" id="mobile-menu" aria-label="Open navigation" aria-expanded="false"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-menu"></use></svg></button><div class="breadcrumb">Workspace &nbsp;/&nbsp; <b>Financial Reports</b></div></div><div class="topbar-right"><label class="top-search"><svg class="icon sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-search"></use></svg><input type="search" placeholder="Search FinTrack..." data-global-search aria-label="Search pages"></label><button class="icon-button" aria-label="Notifications" data-toast="Notifications are a visual demo for Part 2."><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-bell"></use></svg></button><a href="profile.html" aria-label="Open profile" class="avatar top-avatar">AM</a></div></header><main class="content"><div class="demo-banner"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-info"></use></svg> UI prototype · Sample financial data only · No real funds, authentication, or live trades</div><div class="page-head"><div><h1>Financial Reports</h1><p>Explore your net worth, income, spending, and financial trends.</p></div><div class="page-actions"><a class="btn btn-outline" href="transactions.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-receipt"></use></svg>Transactions</a></div></div><div class="grid four"><div class="card stat-card"><div class="stat-label">Net worth <svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-wallet"></use></svg></div><div class="stat-value">$46,452.15</div><div class="stat-sub"> November snapshot</div></div><div class="card stat-card"><div class="stat-label">Monthly income <svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-arrow-down"></use></svg></div><div class="stat-value">$5,480.00</div><div class="stat-sub"> November 2026</div></div><div class="card stat-card"><div class="stat-label">Monthly spending <svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-arrow-up"></use></svg></div><div class="stat-value">$3,175.00</div><div class="stat-sub"> November 2026</div></div><div class="card stat-card"><div class="stat-label">Net cash flow <svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-trending"></use></svg></div><div class="stat-value">+$2,305.00</div><div class="stat-sub"> Income less expenses</div></div></div><div class="grid asym section-gap"><section class="card pad "><header class="card-head"><div><h2>Net worth trend</h2><p>Illustrative net worth over the last six months</p></div></header><svg role="img" aria-label="Illustrative financial trend from June to November" viewBox="0 0 720 185" class="chart-area" preserveAspectRatio="xMidYMid meet"><defs><linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6858de" stop-opacity=".17"/><stop offset="1" stop-color="#6858de" stop-opacity="0"/></linearGradient></defs><path d="M28 20 H690" stroke="#edf0f6" stroke-width="1" stroke-dasharray="4 6"/><path d="M28 64.33333333333334 H690" stroke="#edf0f6" stroke-width="1" stroke-dasharray="4 6"/><path d="M28 108.66666666666667 H690" stroke="#edf0f6" stroke-width="1" stroke-dasharray="4 6"/><path d="M28 153 H690" stroke="#edf0f6" stroke-width="1" stroke-dasharray="4 6"/><path d="M28.0,111.8 L88.2,102.5 L148.4,103.8 L208.5,93.2 L268.7,95.8 L328.9,85.2 L389.1,79.8 L449.3,77.2 L509.5,69.2 L569.6,59.9 L629.8,57.2 L690.0,42.6 L690,153 L28,153 Z" fill="url(#areaFill)"/><path d="M28.0,111.8 L88.2,102.5 L148.4,103.8 L208.5,93.2 L268.7,95.8 L328.9,85.2 L389.1,79.8 L449.3,77.2 L509.5,69.2 L569.6,59.9 L629.8,57.2 L690.0,42.6" fill="none" stroke="#6858de" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="690.0" cy="42.6" r="5" fill="#6858de" stroke="white" stroke-width="3"/><text x="28.0" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Jun</text><text x="160.4" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Jul</text><text x="292.8" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Aug</text><text x="425.2" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Sep</text><text x="557.6" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Oct</text><text x="690.0" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Nov</text></svg></section><section class="card pad "><header class="card-head"><div><h2>Expenses by category</h2><p>Monthly breakdown</p></div></header><div class="donut"><div class="donut-center"><b>$3,175</b><small>Spent this month</small></div></div><div style="margin-top:19px"><div class="info-row"><span class="label">Housing</span><strong>$1,450</strong></div><div class="info-row"><span class="label">Groceries</span><strong>$610</strong></div><div class="info-row"><span class="label">Transportation</span><strong>$282</strong></div><div class="info-row"><span class="label">Dining</span><strong>$190</strong></div><div class="info-row"><span class="label">Other</span><strong>$643</strong></div></div></section></div><div class="section-gap"><section class="card pad "><header class="card-head"><div><h2>Cash flow by month</h2><p>Income, expenses and remaining cash</p></div><button class="btn btn-outline" type="button" id="export-reports"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-download"></use></svg>Export sample CSV</button></header><div class="chart-bars" aria-label="Illustrative income and expenses by month"><div class="chart-bar-group"><div class="chart-bar" style="--h:64%"></div><div class="chart-bar secondary" style="--h:40%"></div><label>Jun</label></div><div class="chart-bar-group"><div class="chart-bar" style="--h:72%"></div><div class="chart-bar secondary" style="--h:54%"></div><label>Jul</label></div><div class="chart-bar-group"><div class="chart-bar" style="--h:70%"></div><div class="chart-bar secondary" style="--h:45%"></div><label>Aug</label></div><div class="chart-bar-group"><div class="chart-bar" style="--h:84%"></div><div class="chart-bar secondary" style="--h:63%"></div><label>Sep</label></div><div class="chart-bar-group"><div class="chart-bar" style="--h:80%"></div><div class="chart-bar secondary" style="--h:51%"></div><label>Oct</label></div><div class="chart-bar-group"><div class="chart-bar" style="--h:89%"></div><div class="chart-bar secondary" style="--h:56%"></div><label>Nov</label></div></div><div style="height:27px"></div><div class="chart-caption"><span><i class="legend-dot"></i>Income</span><span><i class="legend-dot mint"></i>Expenses</span></div><div class="horizontal-rule"></div><div class="table-wrap"><table class="table"><thead><tr><th>Month</th><th>Income</th><th>Expenses</th><th>Cash flow</th></tr></thead><tbody><tr><td>Jun 2026</td><td>$4,900</td><td>$2,870</td><td class="amount text-positive">+$2,030</td></tr><tr><td>Jul 2026</td><td>$5,100</td><td>$3,070</td><td class="amount text-positive">+$2,030</td></tr><tr><td>Aug 2026</td><td>$5,030</td><td>$2,960</td><td class="amount text-positive">+$2,070</td></tr><tr><td>Sep 2026</td><td>$5,320</td><td>$3,380</td><td class="amount text-positive">+$1,940</td></tr><tr><td>Oct 2026</td><td>$5,260</td><td>$3,080</td><td class="amount text-positive">+$2,180</td></tr><tr><td>Nov 2026</td><td>$5,480</td><td>$3,175</td><td class="amount text-positive">+$2,305</td></tr></tbody></table></div></section></div><footer class="mini-footer">© 2026 FinTrack · Academic UI prototype for COMP 3540 · All figures and names are sample data</footer></main></div></div><div class="toast hide" id="toast" role="status" aria-live="polite"></div><script src="../assets/js/app.js" defer></script></body></html>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6858de">
+    <meta name="description" content="FinTrack academic financial management UI prototype - Financial Reports">
+
+    <title>Financial Reports | FinTrack</title>
+
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+</head>
+
+<body data-page="reports">
+
+    <div class="app-shell">
+
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+        <aside class="sidebar" id="app-sidebar">
+
+            <a href="dashboard.html" class="brand">
+                <span class="brand-mark">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-trending"></use>
+                    </svg>
+                </span>
+                fintrack<span style="color:var(--primary)">.</span>
+            </a>
+
+            <nav class="sidebar-nav" aria-label="Main navigation">
+
+                <div class="nav-heading">OVERVIEW</div>
+
+                <a class="nav-item " href="dashboard.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-grid"></use>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+
+                <div class="nav-heading">BANKING</div>
+
+                <a class="nav-item " href="accounts.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-wallet"></use>
+                    </svg>
+                    <span>My Accounts</span>
+                </a>
+
+                <a class="nav-item " href="transactions.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-receipt"></use>
+                    </svg>
+                    <span>Transactions</span>
+                </a>
+
+                <a class="nav-item " href="transfers.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-transfer"></use>
+                    </svg>
+                    <span>Transfers</span>
+                </a>
+
+                <a class="nav-item " href="income-expenses.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-pie"></use>
+                    </svg>
+                    <span>Income & Expenses</span>
+                </a>
+
+                <div class="nav-heading">INVESTMENTS</div>
+
+                <a class="nav-item " href="portfolio.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-trending"></use>
+                    </svg>
+                    <span>Portfolio</span>
+                </a>
+
+                <a class="nav-item " href="trading.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-candles"></use>
+                    </svg>
+                    <span>Paper Trading</span>
+                </a>
+
+                <div class="nav-heading">INSIGHTS</div>
+
+                <a class="nav-item active" href="reports.html" aria-current="page">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-chart"></use>
+                    </svg>
+                    <span>Reports</span>
+                </a>
+
+                <div class="nav-heading">ACCOUNT</div>
+
+                <a class="nav-item " href="profile.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-user"></use>
+                    </svg>
+                    <span>Profile</span>
+                </a>
+
+                <a class="nav-item " href="admin.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-shield"></use>
+                    </svg>
+                    <span>Admin (demo)</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-footer">
+
+                <a href="login.html" class="nav-item">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-logout"></use>
+                    </svg>
+                    <span>Back to login</span>
+                </a>
+
+                <a href="profile.html" class="sidebar-user">
+                    <span class="avatar">AM</span>
+                    <span>
+                        <span class="username">Alex Morgan</span>
+                        <br>
+                        <span class="userrole">Demo account</span>
+                    </span>
+                </a>
+
+            </div>
+
+        </aside>
+
+        <div class="app-main">
+
+            <header class="topbar">
+
+                <div class="topbar-left">
+
+                    <button
+                        class="icon-button mobile-menu"
+                        id="mobile-menu"
+                        aria-label="Open navigation"
+                        aria-expanded="false"
+                    >
+                        <svg class="icon " aria-hidden="true">
+                            <use href="../assets/icons/sprite.svg#i-menu"></use>
+                        </svg>
+                    </button>
+
+                    <div class="breadcrumb">
+                        Workspace &nbsp;/&nbsp; <b>Financial Reports</b>
+                    </div>
+
+                </div>
+
+                <div class="topbar-right">
+
+                    <label class="top-search">
+                        <svg class="icon sm" aria-hidden="true">
+                            <use href="../assets/icons/sprite.svg#i-search"></use>
+                        </svg>
+                        <input
+                            type="search"
+                            placeholder="Search FinTrack..."
+                            data-global-search
+                            aria-label="Search pages"
+                        >
+                    </label>
+
+                    <button
+                        class="icon-button"
+                        aria-label="Notifications"
+                        data-toast="Notifications are a visual demo for Part 2."
+                    >
+                        <svg class="icon " aria-hidden="true">
+                            <use href="../assets/icons/sprite.svg#i-bell"></use>
+                        </svg>
+                    </button>
+
+                    <a href="profile.html" aria-label="Open profile" class="avatar top-avatar">AM</a>
+
+                </div>
+
+            </header>
+
+            <main class="content">
+
+                <div class="demo-banner">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-info"></use>
+                    </svg>
+                    UI prototype · Sample financial data only · No real funds, authentication, or live trades
+                </div>
+
+                <div class="page-head">
+
+                    <div>
+                        <h1>Financial Reports</h1>
+                        <p>Explore your net worth, income, spending, and financial trends.</p>
+                    </div>
+
+                    <div class="page-actions">
+                        <a class="btn btn-outline" href="transactions.html">
+                            <svg class="icon " aria-hidden="true">
+                                <use href="../assets/icons/sprite.svg#i-receipt"></use>
+                            </svg>
+                            Transactions
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="grid four">
+
+                    <div class="card stat-card">
+
+                        <div class="stat-label">
+                            Net worth
+                            <svg class="icon " aria-hidden="true">
+                                <use href="../assets/icons/sprite.svg#i-wallet"></use>
+                            </svg>
+                        </div>
+
+                        <div class="stat-value">$46,452.15</div>
+                        <div class="stat-sub"> November snapshot</div>
+
+                    </div>
+
+                    <div class="card stat-card">
+
+                        <div class="stat-label">
+                            Monthly income
+                            <svg class="icon " aria-hidden="true">
+                                <use href="../assets/icons/sprite.svg#i-arrow-down"></use>
+                            </svg>
+                        </div>
+
+                        <div class="stat-value">$5,480.00</div>
+                        <div class="stat-sub"> November 2026</div>
+
+                    </div>
+
+                    <div class="card stat-card">
+
+                        <div class="stat-label">
+                            Monthly spending
+                            <svg class="icon " aria-hidden="true">
+                                <use href="../assets/icons/sprite.svg#i-arrow-up"></use>
+                            </svg>
+                        </div>
+
+                        <div class="stat-value">$3,175.00</div>
+                        <div class="stat-sub"> November 2026</div>
+
+                    </div>
+
+                    <div class="card stat-card">
+
+                        <div class="stat-label">
+                            Net cash flow
+                            <svg class="icon " aria-hidden="true">
+                                <use href="../assets/icons/sprite.svg#i-trending"></use>
+                            </svg>
+                        </div>
+
+                        <div class="stat-value">+$2,305.00</div>
+                        <div class="stat-sub"> Income less expenses</div>
+
+                    </div>
+
+                </div>
+
+                <div class="grid asym section-gap">
+
+                    <section class="card pad ">
+
+                        <header class="card-head">
+                            <div>
+                                <h2>Net worth trend</h2>
+                                <p>Illustrative net worth over the last six months</p>
+                            </div>
+                        </header>
+
+                        <svg
+                            role="img"
+                            aria-label="Illustrative financial trend from June to November"
+                            viewBox="0 0 720 185"
+                            class="chart-area"
+                            preserveAspectRatio="xMidYMid meet"
+                        >
+
+                            <defs>
+                                <linearGradient
+                                    id="areaFill"
+                                    x1="0"
+                                    y1="0"
+                                    x2="0"
+                                    y2="1"
+                                >
+                                    <stop
+                                        offset="0"
+                                        stop-color="#6858de"
+                                        stop-opacity=".17"
+                                    />
+                                    <stop
+                                        offset="1"
+                                        stop-color="#6858de"
+                                        stop-opacity="0"
+                                    />
+                                </linearGradient>
+                            </defs>
+
+                            <path
+                                d="M28 20 H690"
+                                stroke="#edf0f6"
+                                stroke-width="1"
+                                stroke-dasharray="4 6"
+                            />
+
+                            <path
+                                d="M28 64.33333333333334 H690"
+                                stroke="#edf0f6"
+                                stroke-width="1"
+                                stroke-dasharray="4 6"
+                            />
+
+                            <path
+                                d="M28 108.66666666666667 H690"
+                                stroke="#edf0f6"
+                                stroke-width="1"
+                                stroke-dasharray="4 6"
+                            />
+
+                            <path
+                                d="M28 153 H690"
+                                stroke="#edf0f6"
+                                stroke-width="1"
+                                stroke-dasharray="4 6"
+                            />
+
+                            <path
+                                d="M28.0,111.8 L88.2,102.5 L148.4,103.8 L208.5,93.2 L268.7,95.8 L328.9,85.2 L389.1,79.8 L449.3,77.2 L509.5,69.2 L569.6,59.9 L629.8,57.2 L690.0,42.6 L690,153 L28,153 Z"
+                                fill="url(#areaFill)"
+                            />
+
+                            <path
+                                d="M28.0,111.8 L88.2,102.5 L148.4,103.8 L208.5,93.2 L268.7,95.8 L328.9,85.2 L389.1,79.8 L449.3,77.2 L509.5,69.2 L569.6,59.9 L629.8,57.2 L690.0,42.6"
+                                fill="none"
+                                stroke="#6858de"
+                                stroke-width="3.4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+                            <circle
+                                cx="690.0"
+                                cy="42.6"
+                                r="5"
+                                fill="#6858de"
+                                stroke="white"
+                                stroke-width="3"
+                            />
+
+                            <text x="28.0" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Jun</text>
+                            <text x="160.4" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Jul</text>
+                            <text x="292.8" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Aug</text>
+                            <text x="425.2" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Sep</text>
+                            <text x="557.6" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Oct</text>
+                            <text x="690.0" y="180" fill="#9ca5b5" font-size="11" text-anchor="middle">Nov</text>
+
+                        </svg>
+
+                    </section>
+
+                    <section class="card pad ">
+
+                        <header class="card-head">
+                            <div>
+                                <h2>Expenses by category</h2>
+                                <p>Monthly breakdown</p>
+                            </div>
+                        </header>
+
+                        <div class="donut">
+                            <div class="donut-center">
+                                <b>$3,175</b>
+                                <small>Spent this month</small>
+                            </div>
+                        </div>
+
+                        <div style="margin-top:19px">
+
+                            <div class="info-row">
+                                <span class="label">Housing</span>
+                                <strong>$1,450</strong>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="label">Groceries</span>
+                                <strong>$610</strong>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="label">Transportation</span>
+                                <strong>$282</strong>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="label">Dining</span>
+                                <strong>$190</strong>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="label">Other</span>
+                                <strong>$643</strong>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <div class="section-gap">
+
+                    <section class="card pad ">
+
+                        <header class="card-head">
+
+                            <div>
+                                <h2>Cash flow by month</h2>
+                                <p>Income, expenses and remaining cash</p>
+                            </div>
+
+                            <button
+                                class="btn btn-outline"
+                                type="button"
+                                id="export-reports"
+                            >
+                                <svg class="icon " aria-hidden="true">
+                                    <use href="../assets/icons/sprite.svg#i-download"></use>
+                                </svg>
+                                Export sample CSV
+                            </button>
+
+                        </header>
+
+                        <div
+                            class="chart-bars"
+                            aria-label="Illustrative income and expenses by month"
+                        >
+
+                            <div class="chart-bar-group">
+                                <div class="chart-bar" style="--h:64%"></div>
+                                <div class="chart-bar secondary" style="--h:40%"></div>
+                                <label>Jun</label>
+                            </div>
+
+                            <div class="chart-bar-group">
+                                <div class="chart-bar" style="--h:72%"></div>
+                                <div class="chart-bar secondary" style="--h:54%"></div>
+                                <label>Jul</label>
+                            </div>
+
+                            <div class="chart-bar-group">
+                                <div class="chart-bar" style="--h:70%"></div>
+                                <div class="chart-bar secondary" style="--h:45%"></div>
+                                <label>Aug</label>
+                            </div>
+
+                            <div class="chart-bar-group">
+                                <div class="chart-bar" style="--h:84%"></div>
+                                <div class="chart-bar secondary" style="--h:63%"></div>
+                                <label>Sep</label>
+                            </div>
+
+                            <div class="chart-bar-group">
+                                <div class="chart-bar" style="--h:80%"></div>
+                                <div class="chart-bar secondary" style="--h:51%"></div>
+                                <label>Oct</label>
+                            </div>
+
+                            <div class="chart-bar-group">
+                                <div class="chart-bar" style="--h:89%"></div>
+                                <div class="chart-bar secondary" style="--h:56%"></div>
+                                <label>Nov</label>
+                            </div>
+
+                        </div>
+
+                        <div style="height:27px"></div>
+
+                        <div class="chart-caption">
+                            <span><i class="legend-dot"></i>Income</span>
+                            <span><i class="legend-dot mint"></i>Expenses</span>
+                        </div>
+
+                        <div class="horizontal-rule"></div>
+
+                        <div class="table-wrap">
+
+                            <table class="table">
+
+                                <thead>
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Income</th>
+                                        <th>Expenses</th>
+                                        <th>Cash flow</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>Jun 2026</td>
+                                        <td>$4,900</td>
+                                        <td>$2,870</td>
+                                        <td class="amount text-positive">+$2,030</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Jul 2026</td>
+                                        <td>$5,100</td>
+                                        <td>$3,070</td>
+                                        <td class="amount text-positive">+$2,030</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Aug 2026</td>
+                                        <td>$5,030</td>
+                                        <td>$2,960</td>
+                                        <td class="amount text-positive">+$2,070</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Sep 2026</td>
+                                        <td>$5,320</td>
+                                        <td>$3,380</td>
+                                        <td class="amount text-positive">+$1,940</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Oct 2026</td>
+                                        <td>$5,260</td>
+                                        <td>$3,080</td>
+                                        <td class="amount text-positive">+$2,180</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Nov 2026</td>
+                                        <td>$5,480</td>
+                                        <td>$3,175</td>
+                                        <td class="amount text-positive">+$2,305</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <footer class="mini-footer">
+                    © 2026 FinTrack · Academic UI prototype for COMP 3540 · All figures and names are sample data
+                </footer>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <div class="toast hide" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="../assets/js/app.js" defer></script>
+
+</body>
+</html>

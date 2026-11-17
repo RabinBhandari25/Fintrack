@@ -1,1 +1,430 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#6858de"><meta name="description" content="FinTrack academic financial management UI prototype - User Profile"><title>User Profile | FinTrack</title><link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg"><link rel="stylesheet" href="../assets/css/main.css"><link rel="stylesheet" href="../assets/css/components.css"><link rel="stylesheet" href="../assets/css/layout.css"></head><body data-page="profile"><div class="app-shell"><div class="sidebar-overlay" id="sidebar-overlay"></div><aside class="sidebar" id="app-sidebar"><a href="dashboard.html" class="brand"><span class="brand-mark"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-trending"></use></svg></span>fintrack<span style="color:var(--primary)">.</span></a><nav class="sidebar-nav" aria-label="Main navigation"><div class="nav-heading">OVERVIEW</div><a class="nav-item " href="dashboard.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-grid"></use></svg><span>Dashboard</span></a><div class="nav-heading">BANKING</div><a class="nav-item " href="accounts.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-wallet"></use></svg><span>My Accounts</span></a><a class="nav-item " href="transactions.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-receipt"></use></svg><span>Transactions</span></a><a class="nav-item " href="transfers.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-transfer"></use></svg><span>Transfers</span></a><a class="nav-item " href="income-expenses.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-pie"></use></svg><span>Income & Expenses</span></a><div class="nav-heading">INVESTMENTS</div><a class="nav-item " href="portfolio.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-trending"></use></svg><span>Portfolio</span></a><a class="nav-item " href="trading.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-candles"></use></svg><span>Paper Trading</span></a><div class="nav-heading">INSIGHTS</div><a class="nav-item " href="reports.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-chart"></use></svg><span>Reports</span></a><div class="nav-heading">ACCOUNT</div><a class="nav-item active" href="profile.html" aria-current="page"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-user"></use></svg><span>Profile</span></a><a class="nav-item " href="admin.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-shield"></use></svg><span>Admin (demo)</span></a></nav><div class="sidebar-footer"><a href="login.html" class="nav-item"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-logout"></use></svg><span>Back to login</span></a><a href="profile.html" class="sidebar-user"><span class="avatar">AM</span><span><span class="username">Alex Morgan</span><br><span class="userrole">Demo account</span></span></a></div></aside><div class="app-main"><header class="topbar"><div class="topbar-left"><button class="icon-button mobile-menu" id="mobile-menu" aria-label="Open navigation" aria-expanded="false"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-menu"></use></svg></button><div class="breadcrumb">Workspace &nbsp;/&nbsp; <b>User Profile</b></div></div><div class="topbar-right"><label class="top-search"><svg class="icon sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#i-search"></use></svg><input type="search" placeholder="Search FinTrack..." data-global-search aria-label="Search pages"></label><button class="icon-button" aria-label="Notifications" data-toast="Notifications are a visual demo for Part 2."><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-bell"></use></svg></button><a href="profile.html" aria-label="Open profile" class="avatar top-avatar">AM</a></div></header><main class="content"><div class="demo-banner"><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-info"></use></svg> UI prototype · Sample financial data only · No real funds, authentication, or live trades</div><div class="page-head"><div><h1>User Profile</h1><p>Manage your information and review account security settings.</p></div><div class="page-actions"></div></div><div class="grid asym"><div class="stack"><section class="card pad"><div class="align-center" style="margin-bottom:22px"><span class="avatar" style="width:62px;height:62px;font-size:19px">AM</span><div><h2>Alex Morgan</h2><p class="small muted">Demo member · alex@example.com</p><span class="pill success">Profile preview</span></div></div><header class="card-head"><div><h2>Personal information</h2><p>Update your FinTrack profile details</p></div></header><form class="stack" id="profile-form" style="gap:15px"><div class="form-grid"><div class="field"><label for="profile-first">First name</label><input class="form-control" id="profile-first" value="Alex" required></div><div class="field"><label for="profile-last">Last name</label><input class="form-control" id="profile-last" value="Morgan" required></div><div class="field wide"><label for="profile-email">Email address</label><input class="form-control" id="profile-email" type="email" value="alex@example.com" required></div><div class="field"><label for="profile-currency">Preferred currency</label><select id="profile-currency" class="form-control"><option selected>CAD · Canadian Dollar</option><option>USD · US Dollar</option></select></div><div class="field"><label for="profile-tz">Time zone</label><select id="profile-tz" class="form-control"><option selected>America/Vancouver</option><option>America/Toronto</option></select></div></div><button class="btn btn-primary" type="submit" style="align-self:start">Save profile (demo)</button></form></section><section class="card pad "><header class="card-head"><div><h2>Security settings</h2><p>Authentication will use PHP sessions in Part 3</p></div></header><div class="between" style="padding:10px 0"><div><h3>Password</h3><p class="small muted">Change your account password</p></div><a href="reset-password.html" class="btn btn-outline btn-sm">Preview reset</a></div><div class="horizontal-rule"></div><div class="between"><div><h3>Multi-factor authentication</h3><p class="small muted">Authenticator setup planned for later</p></div><span class="pill warning">Not configured</span></div><div class="horizontal-rule"></div><div class="between"><div><h3>Account session</h3><p class="small muted">Demo has no authenticated session</p></div><span class="pill">UI only</span></div></section></div><section class="card pad "><header class="card-head"><div><h2>Preferences</h2><p>Customize your workspace</p></div></header><div class="field"><label for="profile-theme">Appearance</label><select id="profile-theme" class="form-control"><option>Light theme (default)</option></select></div><div class="horizontal-rule"></div><div class="info-row"><span class="label">Account status</span><strong><span class="pill purple">Demo profile</span></strong></div><div class="info-row"><span class="label">Primary currency</span><strong>CAD</strong></div><div class="info-row"><span class="label">Email verification</span><strong><span class="pill warning">Not verified</span></strong></div><div class="horizontal-rule"></div><h3>Account actions</h3><p class="small muted" style="margin:8px 0 14px">These functions require a secure PHP backend.</p><a class="btn btn-outline" href="login.html" ><svg class="icon " aria-hidden="true"><use href="../assets/icons/sprite.svg#i-logout"></use></svg>Back to login</a></section></div><footer class="mini-footer">© 2026 FinTrack · Academic UI prototype for COMP 3540 · All figures and names are sample data</footer></main></div></div><div class="toast hide" id="toast" role="status" aria-live="polite"></div><script src="../assets/js/app.js" defer></script></body></html>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6858de">
+    <meta name="description" content="FinTrack academic financial management UI prototype - User Profile">
+
+    <title>User Profile | FinTrack</title>
+
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+</head>
+
+<body data-page="profile">
+
+    <div class="app-shell">
+
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+        <aside class="sidebar" id="app-sidebar">
+
+            <a href="dashboard.html" class="brand">
+                <span class="brand-mark">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-trending"></use>
+                    </svg>
+                </span>
+                fintrack<span style="color:var(--primary)">.</span>
+            </a>
+
+            <nav class="sidebar-nav" aria-label="Main navigation">
+
+                <div class="nav-heading">OVERVIEW</div>
+
+                <a class="nav-item " href="dashboard.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-grid"></use>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+
+                <div class="nav-heading">BANKING</div>
+
+                <a class="nav-item " href="accounts.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-wallet"></use>
+                    </svg>
+                    <span>My Accounts</span>
+                </a>
+
+                <a class="nav-item " href="transactions.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-receipt"></use>
+                    </svg>
+                    <span>Transactions</span>
+                </a>
+
+                <a class="nav-item " href="transfers.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-transfer"></use>
+                    </svg>
+                    <span>Transfers</span>
+                </a>
+
+                <a class="nav-item " href="income-expenses.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-pie"></use>
+                    </svg>
+                    <span>Income & Expenses</span>
+                </a>
+
+                <div class="nav-heading">INVESTMENTS</div>
+
+                <a class="nav-item " href="portfolio.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-trending"></use>
+                    </svg>
+                    <span>Portfolio</span>
+                </a>
+
+                <a class="nav-item " href="trading.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-candles"></use>
+                    </svg>
+                    <span>Paper Trading</span>
+                </a>
+
+                <div class="nav-heading">INSIGHTS</div>
+
+                <a class="nav-item " href="reports.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-chart"></use>
+                    </svg>
+                    <span>Reports</span>
+                </a>
+
+                <div class="nav-heading">ACCOUNT</div>
+
+                <a class="nav-item active" href="profile.html" aria-current="page">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-user"></use>
+                    </svg>
+                    <span>Profile</span>
+                </a>
+
+                <a class="nav-item " href="admin.html">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-shield"></use>
+                    </svg>
+                    <span>Admin (demo)</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-footer">
+
+                <a href="login.html" class="nav-item">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-logout"></use>
+                    </svg>
+                    <span>Back to login</span>
+                </a>
+
+                <a href="profile.html" class="sidebar-user">
+                    <span class="avatar">AM</span>
+                    <span>
+                        <span class="username">Alex Morgan</span>
+                        <br>
+                        <span class="userrole">Demo account</span>
+                    </span>
+                </a>
+
+            </div>
+
+        </aside>
+
+        <div class="app-main">
+
+            <header class="topbar">
+
+                <div class="topbar-left">
+
+                    <button
+                        class="icon-button mobile-menu"
+                        id="mobile-menu"
+                        aria-label="Open navigation"
+                        aria-expanded="false"
+                    >
+                        <svg class="icon " aria-hidden="true">
+                            <use href="../assets/icons/sprite.svg#i-menu"></use>
+                        </svg>
+                    </button>
+
+                    <div class="breadcrumb">
+                        Workspace &nbsp;/&nbsp; <b>User Profile</b>
+                    </div>
+
+                </div>
+
+                <div class="topbar-right">
+
+                    <label class="top-search">
+                        <svg class="icon sm" aria-hidden="true">
+                            <use href="../assets/icons/sprite.svg#i-search"></use>
+                        </svg>
+                        <input
+                            type="search"
+                            placeholder="Search FinTrack..."
+                            data-global-search
+                            aria-label="Search pages"
+                        >
+                    </label>
+
+                    <button
+                        class="icon-button"
+                        aria-label="Notifications"
+                        data-toast="Notifications are a visual demo for Part 2."
+                    >
+                        <svg class="icon " aria-hidden="true">
+                            <use href="../assets/icons/sprite.svg#i-bell"></use>
+                        </svg>
+                    </button>
+
+                    <a href="profile.html" aria-label="Open profile" class="avatar top-avatar">AM</a>
+
+                </div>
+
+            </header>
+
+            <main class="content">
+
+                <div class="demo-banner">
+                    <svg class="icon " aria-hidden="true">
+                        <use href="../assets/icons/sprite.svg#i-info"></use>
+                    </svg>
+                    UI prototype · Sample financial data only · No real funds, authentication, or live trades
+                </div>
+
+                <div class="page-head">
+
+                    <div>
+                        <h1>User Profile</h1>
+                        <p>Manage your information and review account security settings.</p>
+                    </div>
+
+                    <div class="page-actions"></div>
+
+                </div>
+
+                <div class="grid asym">
+
+                    <div class="stack">
+
+                        <section class="card pad">
+
+                            <div class="align-center" style="margin-bottom:22px">
+
+                                <span class="avatar" style="width:62px;height:62px;font-size:19px">
+                                    AM
+                                </span>
+
+                                <div>
+                                    <h2>Alex Morgan</h2>
+                                    <p class="small muted">Demo member · alex@example.com</p>
+                                    <span class="pill success">Profile preview</span>
+                                </div>
+
+                            </div>
+
+                            <header class="card-head">
+                                <div>
+                                    <h2>Personal information</h2>
+                                    <p>Update your FinTrack profile details</p>
+                                </div>
+                            </header>
+
+                            <form class="stack" id="profile-form" style="gap:15px">
+
+                                <div class="form-grid">
+
+                                    <div class="field">
+                                        <label for="profile-first">First name</label>
+                                        <input
+                                            class="form-control"
+                                            id="profile-first"
+                                            value="Alex"
+                                            required
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label for="profile-last">Last name</label>
+                                        <input
+                                            class="form-control"
+                                            id="profile-last"
+                                            value="Morgan"
+                                            required
+                                        >
+                                    </div>
+
+                                    <div class="field wide">
+                                        <label for="profile-email">Email address</label>
+                                        <input
+                                            class="form-control"
+                                            id="profile-email"
+                                            type="email"
+                                            value="alex@example.com"
+                                            required
+                                        >
+                                    </div>
+
+                                    <div class="field">
+                                        <label for="profile-currency">Preferred currency</label>
+                                        <select id="profile-currency" class="form-control">
+                                            <option selected>CAD · Canadian Dollar</option>
+                                            <option>USD · US Dollar</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field">
+                                        <label for="profile-tz">Time zone</label>
+                                        <select id="profile-tz" class="form-control">
+                                            <option selected>America/Vancouver</option>
+                                            <option>America/Toronto</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <button
+                                    class="btn btn-primary"
+                                    type="submit"
+                                    style="align-self:start"
+                                >
+                                    Save profile (demo)
+                                </button>
+
+                            </form>
+
+                        </section>
+
+                        <section class="card pad ">
+
+                            <header class="card-head">
+                                <div>
+                                    <h2>Security settings</h2>
+                                    <p>Authentication will use PHP sessions in Part 3</p>
+                                </div>
+                            </header>
+
+                            <div class="between" style="padding:10px 0">
+
+                                <div>
+                                    <h3>Password</h3>
+                                    <p class="small muted">Change your account password</p>
+                                </div>
+
+                                <a href="reset-password.html" class="btn btn-outline btn-sm">
+                                    Preview reset
+                                </a>
+
+                            </div>
+
+                            <div class="horizontal-rule"></div>
+
+                            <div class="between">
+
+                                <div>
+                                    <h3>Multi-factor authentication</h3>
+                                    <p class="small muted">Authenticator setup planned for later</p>
+                                </div>
+
+                                <span class="pill warning">Not configured</span>
+
+                            </div>
+
+                            <div class="horizontal-rule"></div>
+
+                            <div class="between">
+
+                                <div>
+                                    <h3>Account session</h3>
+                                    <p class="small muted">Demo has no authenticated session</p>
+                                </div>
+
+                                <span class="pill">UI only</span>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                    <section class="card pad ">
+
+                        <header class="card-head">
+                            <div>
+                                <h2>Preferences</h2>
+                                <p>Customize your workspace</p>
+                            </div>
+                        </header>
+
+                        <div class="field">
+                            <label for="profile-theme">Appearance</label>
+                            <select id="profile-theme" class="form-control">
+                                <option>Light theme (default)</option>
+                            </select>
+                        </div>
+
+                        <div class="horizontal-rule"></div>
+
+                        <div class="info-row">
+                            <span class="label">Account status</span>
+                            <strong>
+                                <span class="pill purple">Demo profile</span>
+                            </strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span class="label">Primary currency</span>
+                            <strong>CAD</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span class="label">Email verification</span>
+                            <strong>
+                                <span class="pill warning">Not verified</span>
+                            </strong>
+                        </div>
+
+                        <div class="horizontal-rule"></div>
+
+                        <h3>Account actions</h3>
+
+                        <p class="small muted" style="margin:8px 0 14px">
+                            These functions require a secure PHP backend.
+                        </p>
+
+                        <a class="btn btn-outline" href="login.html">
+                            <svg class="icon " aria-hidden="true">
+                                <use href="../assets/icons/sprite.svg#i-logout"></use>
+                            </svg>
+                            Back to login
+                        </a>
+
+                    </section>
+
+                </div>
+
+                <footer class="mini-footer">
+                    © 2026 FinTrack · Academic UI prototype for COMP 3540 · All figures and names are sample data
+                </footer>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <div class="toast hide" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="../assets/js/app.js" defer></script>
+
+</body>
+</html>
