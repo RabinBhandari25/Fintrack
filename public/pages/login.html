@@ -17,49 +17,33 @@
 
 </head>
 
-<body data-page="welcome-back">
+<body>
+    
 
-    <main class="auth-page">
+    <main>
 
-        <!-- Left Side: Hero Section -->
-        <div class="auth-hero">
-
-            <div class="auth-brand">
-                <span class="brand-mark">
-                    <svg class="icon " aria-hidden="true">
-                        <use href="../assets/icons/sprite.svg#i-trending"></use>
-                    </svg>
-                </span>
-                fintrack.
+        <!-- left side of login page -->
+        <div class="login_intro">
+            <div class="intro_name">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <div>FinTrack.</div>
             </div>
 
-            <div class="hero-copy">
-
-                <div class="eyebrow" style="color:#dcd5ff;margin-bottom:12px">
-                    YOUR MONEY, MADE SIMPLE
-                </div>
-
-                <h2>A clearer picture of your money, all in one place.</h2>
-
-                <p>
-                    Track everyday spending, organize financial accounts,
-                    and explore investments in one beautifully simple space.
-                </p>
-
-                <!-- Financial Overview Preview -->
-                <div class="auth-mock">
-
-                    <div class="between">
-                        <span class="mini-label">Your net worth</span>
-                        <span class="pill success">↑ 8.4%</span>
+            <div class="intro_detail">
+                <p>YOUR MONEY, MADE SIMPLE</p>
+                <h1>A clearer picture of your money.</h1>
+                <p>Track everyday spending, organize financial accounts, and explore investment in one beautifully simple place.</p>
+                <div class="credit_card">
+                    <div class="card_info">
+                        Your net worth
+                        <div><i class="fa-solid fa-arrow-up"></i> 4.5%</div>
                     </div>
-
-                    <div class="mini-number">$46,452.15</div>
-
+                    <br>
+                    <div class="card_amount">$61,169.15</div>
+                    <br>
                     <div class="mock-bars">
                         <b style="--h:39%"></b>
                         <b style="--h:52%"></b>
-                        <b style="--h:46%"></b>
                         <b style="--h:61%"></b>
                         <b style="--h:55%"></b>
                         <b style="--h:72%"></b>
@@ -68,175 +52,63 @@
                         <b style="--h:76%"></b>
                         <b style="--h:90%"></b>
                     </div>
-
-                    <p class="small" style="color:var(--muted);margin-top:10px">
-                        Illustrative overview · Not live financial data
-                    </p>
-
+                    <br>
+                    <div></div>
                 </div>
             </div>
-
-            <div class="hero-foot">
-                Built for financial clarity · COMP 3540 UI prototype
+            <div>
+                Built for financial clarity.
             </div>
 
         </div>
+        <div class="login_auth">
+            <div class="input_field_area">
+                <h1><b>Welcome back</b></h1>
 
-        <!-- Right Side: Login Section -->
-        <section class="auth-content">
-
-            <div class="auth-topnote">
-                Part 2 · Frontend preview
-            </div>
-
-            <div class="auth-content-inner">
-
-                <h1>Welcome back</h1>
-
-                <p class="intro">
-                    Sign in to explore your FinTrack workspace.
-                </p>
-
-                <!-- Login Form -->
-                <form class="auth-form" data-demo-form="login">
-
-                    <!-- Email Field -->
-                    <div class="field">
-
-                        <label for="email">Email address</label>
-
-                        <input
-                            id="email"
-                            class="form-control"
-                            name="email"
-                            type="email"
-                            placeholder="you@example.com"
-                            required
-                            autocomplete="email"
-                        >
-
-                    </div>
-
-                    <!-- Password Field -->
-                    <div class="field">
-
-                        <label for="password">Password</label>
-
-                        <div class="input-icon">
-
-                            <span
-                                style="position:absolute;left:12px;top:12px;color:#99a1b3"
-                            >
-                                <svg class="icon sm" aria-hidden="true">
-                                    <use href="../assets/icons/sprite.svg#i-lock"></use>
-                                </svg>
-                            </span>
-
-                            <input
-                                class="form-control"
-                                id="password"
-                                type="password"
-                                name="password"
-                                placeholder="Enter your password"
-                                autocomplete="current-password"
-                                required
-                                minlength="8"
-                                style="padding-right:45px"
-                            >
-
-                            <button
-                                type="button"
-                                class="icon-button"
-                                data-toggle-password="password"
-                                aria-label="Show password"
-                            >
-                                <svg class="icon " aria-hidden="true">
-                                    <use href="../assets/icons/sprite.svg#i-eye"></use>
-                                </svg>
-                            </button>
-
-                        </div>
-                    </div>
-
-                    <!-- Remember Me and Forgot Password -->
-                    <div class="between">
-
-                        <label class="check-row">
-                            <input type="checkbox" name="remember">
-                            Remember me
-                        </label>
-
-                        <a class="auth-link" href="forgot-password.html">
-                            Forgot password?
-                        </a>
-
-                    </div>
-
-                    <!-- Sign In Button -->
-                    <button
-                        class="btn btn-primary btn-lg btn-full"
-                        type="submit"
-                    >
-                        <svg class="icon " aria-hidden="true">
-                            <use href="../assets/icons/sprite.svg#i-lock"></use>
-                        </svg>
-                        Sign in (demo)
-                    </button>
-
-                </form>
-
-                <!-- Divider -->
-                <div class="auth-divider">
-                    or
-                </div>
-
-                <!-- Demo Dashboard Button -->
-                <a
-                    href="dashboard.html"
-                    class="btn btn-outline btn-lg btn-full"
+                <br>
+                <br>
+                <p>Email address</p>
+                <br>
+                <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="your@mail.com"
+                required
+                autocomplete="email"
                 >
-                    <svg class="icon " aria-hidden="true">
-                        <use href="../assets/icons/sprite.svg#i-grid"></use>
-                    </svg>
-                    Explore demo dashboard
-                </a>
+                <br>
+                <p>Password</p>
+                <br>
+                <input
+                id="password"
+                type="password"
+                name="password"
+                placeholder="********"
+                autocomplete="current-password"
+                required
+                >
+                <br>
+                <a href="forgot-password.html">Forget password?</a>
+                <br>
+                <button> Log in</button>
+                <br>
+                <div class="login-divider">or</div>                <br>
+                <button class="google"> 
+                    <i class="fa-brands fa-google" rgb(255, 255, 255);"></i>
+                    Google
+                </button>
+                <br>
+                <br>
 
-                <!-- Registration Link -->
-                <p class="auth-below">
-                    New to FinTrack?
-                    <a class="auth-link" href="register.html">
-                        Create an account
-                    </a>
-                </p>
+                <div>New to FinTrack ? <a href="register.html">Create an account</a></div>
+                
 
-                <!-- Demo Notice -->
-                <div class="auth-note">
-
-                    <svg class="icon sm" aria-hidden="true">
-                        <use href="../assets/icons/sprite.svg#i-info"></use>
-                    </svg>
-
-                    This is a static academic demo.
-                    No password is sent, stored, or verified.
-
-                </div>
-
+                
             </div>
-
-        </section>
+        </div>
 
     </main>
-
-    <!-- Toast Notification -->
-    <div
-        class="toast hide"
-        id="toast"
-        role="status"
-        aria-live="polite"
-    ></div>
-
-    <!-- JavaScript -->
-    <script src="../assets/js/app.js" defer></script>
-
+    
 </body>
 </html>

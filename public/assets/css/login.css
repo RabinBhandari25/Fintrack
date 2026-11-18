@@ -1,0 +1,214 @@
+main{
+    display: flex;
+    flex-direction: row;
+}
+/* main *{
+    border: 1px solid black;;
+} */
+.login_intro,
+.login_auth {
+    box-sizing: border-box;
+}
+
+/* left side */
+.login_intro{
+    width: 50vw;
+    background-color: var(--blue);
+    height: 100vh;
+    display: flex;
+    padding: 36px 0;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.login_intro > div{
+    width: 90%;
+    margin: 0 auto;
+    color:white;
+}
+
+.intro_name{
+    display: flex;
+    gap: 16px;
+    font-size: clamp(1.375rem, 2.25vw, 1.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+.intro_detail{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    /* text-align: center; */
+    p{
+        width: 80%;
+    }
+
+    h1{        width: 80%;
+
+    
+        font-size: clamp(1.5rem, 4vw, 3rem);
+        font-weight: bold;
+        line-height: 1.08;
+    }
+   
+    p:first-child{
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+    }
+}
+
+.login_intro > div:last-child{
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.credit_card{
+    box-sizing: border-box;
+    width: min(100%, 400px);
+    border-radius: 24px;
+    background-color: white;
+    padding: 16px;
+    color: black;
+    font-size: 0.875rem;
+    line-height: 1.3;
+    rotate: -2deg;
+    transform: translate(-2px, 10px);
+
+    .card_info{
+        font-size: 0.75rem;
+        display: flex;
+        justify-content: flex-start;
+        gap: 4px;
+
+        div{
+            background-color: rgb(234, 219, 219);
+            border-radius: 2px;
+        }
+    }
+
+    .card_amount{
+        font-size: clamp(1.125rem, 2.6vw, 2rem);
+        font-weight: 900;
+        
+    }
+    .card_chart{
+        height: 120px;
+    }
+    svg {
+        border: 1px solid black;
+        border-radius: 25px;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+/* right side at bottom */
+.login_auth{
+    width: 50vw;
+    height: 100vh;
+}
+
+.mock-bars{
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    height: 76px;
+    border-bottom: 1px solid #dcd5ff;
+}
+
+.mock-bars > b{
+    flex: 1;
+    border-radius: 5px 5px 0 0;
+    background: #dcd5ff;
+    height: var(--h);
+}
+
+/* rigth side */
+
+.login_auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input_field_area{
+    width: min(100%, 24rem);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    h1{
+        font-size: 52px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    input{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: 0.5px solid black;
+        border-radius: 12px;
+
+
+    }
+    button{
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 18px;
+        background-color: var(--blue);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 12px;
+
+    }
+    .google{
+        background-color: white;
+        color: black;
+        border: 0.5px solid black;
+
+    }
+    
+    div{
+        text-align: center;
+    }
+    .login-divider {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        color: #626262;
+    }
+    
+    .login-divider::before,
+    .login-divider::after {
+        content: "";
+        flex: 1;
+        border-top: 1px solid #d1d5db;
+    }
+}
+
+@media (max-width: 48rem) {
+    .login_intro{
+        display: none;
+    }
+
+    .login_auth{
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        min-height: 100dvh;
+        padding: 24px;
+    }
+
+    .input_field_area h1{
+        font-size: clamp(2rem, 7vw, 2.75rem);
+        text-align: center;
+    }
+    
+}
